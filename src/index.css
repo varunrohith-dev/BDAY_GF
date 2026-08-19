@@ -1,0 +1,132 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-paper: #f2e9d8;
+    --color-charcoal: #0c0b0a;
+    --color-ink: #2a2725;
+    --color-gold: #c9a13b;
+    --color-gold-light: #dfb857;
+  }
+
+  html, body {
+    background-color: var(--color-charcoal);
+    color: var(--color-ink);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    overflow-x: hidden;
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+.font-display {
+  font-family: 'Playfair Display', serif;
+}
+
+.font-handwriting {
+  font-family: 'Caveat', cursive;
+}
+
+.font-signature {
+  font-family: 'Homemade Apple', cursive;
+}
+
+/* Subtle paper texture effect */
+.paper-texture {
+  background-color: #f2e9d8;
+  background-image: radial-gradient(#2a2725 0.3px, transparent 0.3px), radial-gradient(#c9a13b 0.35px, #f2e9d8 0.35px);
+  background-size: 16px 16px;
+  background-position: 0 0, 8px 8px;
+}
+
+/* Envelope 3D Utilities */
+.perspective-1000 {
+  perspective: 1200px;
+}
+
+.transform-style-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+/* Gold glow effect */
+.gold-glow {
+  box-shadow: 0 0 25px rgba(201, 161, 59, 0.3);
+}
+
+.gold-text-glow {
+  text-shadow: 0 0 12px rgba(201, 161, 59, 0.4);
+}
+
+/* Responsive scaling overrides for 2K (min-width: 2000px) and 4K (min-width: 3000px) */
+@media (min-width: 2000px) {
+  .responsive-title {
+    font-size: 6.5rem !important;
+    line-height: 1.1 !important;
+  }
+  .responsive-name {
+    font-size: 8.5rem !important;
+    line-height: 1 !important;
+  }
+  .responsive-sub {
+    font-size: 3rem !important;
+  }
+  .responsive-envelope {
+    max-width: 580px !important;
+  }
+  .responsive-letter {
+    max-width: 1100px !important;
+    font-size: 2.25rem !important;
+    line-height: 3rem !important;
+  }
+}
+
+@media (min-width: 3000px) {
+  .responsive-title {
+    font-size: 9.5rem !important;
+    line-height: 1.1 !important;
+  }
+  .responsive-name {
+    font-size: 12.5rem !important;
+    line-height: 1 !important;
+  }
+  .responsive-sub {
+    font-size: 4.5rem !important;
+  }
+  .responsive-envelope {
+    max-width: 800px !important;
+  }
+  .responsive-letter {
+    max-width: 1600px !important;
+    font-size: 3rem !important;
+    line-height: 4rem !important;
+  }
+}
+
+/* Custom scrollbar for letter */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f2e9d8;
+}
+::-webkit-scrollbar-thumb {
+  background: #c9a13b;
+  border-radius: 3px;
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
