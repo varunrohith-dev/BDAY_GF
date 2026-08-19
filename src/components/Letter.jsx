@@ -144,14 +144,14 @@ export default function Letter({
         transition={{ duration: 0.8, ease: "easeOut" }}
         className="paper-texture relative w-full max-w-2xl md:max-w-3xl lg:max-w-4xl responsive-letter bg-[#f2e9d8]/80 backdrop-blur-md text-[#2a2725] rounded-xl shadow-2xl p-5 xs:p-7 sm:p-12 md:p-14 border border-[#c9a13b]/40 overflow-hidden flex flex-col justify-between"
       >
-        {/* TRANSLUCENT PATTANI BACKGROUND PHOTO INSIDE LETTER SQUARE */}
+        {/* TRANSLUCENT PATTANI BACKGROUND PHOTO INSIDE LETTER SQUARE (High Visibility) */}
         <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden">
           <img
             src="/pattani.jpg"
             alt="Pattani Letter Backdrop"
-            className="w-full h-full object-cover object-center opacity-18 filter brightness-105 contrast-105 saturate-110"
+            className="w-full h-full object-cover object-center opacity-45 filter brightness-110 contrast-105 saturate-110"
           />
-          <div className="absolute inset-0 bg-[#f2e9d8]/70 backdrop-blur-[2px]" />
+          <div className="absolute inset-0 bg-[#f2e9d8]/45 backdrop-blur-[1px]" />
         </div>
 
         {/* Top Gold Border Flourish */}
