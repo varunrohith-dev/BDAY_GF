@@ -158,15 +158,15 @@ export default function Letter({
         <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-transparent via-[#c9a13b]/60 to-transparent z-10" />
 
         {/* Paper Header - Date & Salutation */}
-        <header className="relative z-10 space-y-4 font-sans border-b border-[#c9a13b]/25 pb-4">
+        <header className="relative z-10 space-y-4 font-sans border-b border-[#c9a13b]/30 pb-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
-              <Sparkles className="w-4 h-4 text-[#c9a13b]" />
-              <span className="text-xs font-semibold uppercase tracking-widest text-[#881337]">
+              <Sparkles className="w-4.5 h-4.5 text-[#b45309]" />
+              <span className="text-xs sm:text-sm font-extrabold uppercase tracking-widest text-[#701a2b] bg-[#881337]/15 px-3 py-1 rounded-full border border-[#881337]/30 shadow-2xs">
                 Pattani's Letter
               </span>
             </div>
-            <p className="text-right text-xs sm:text-sm font-medium tracking-widest text-[#c9a13b] uppercase">
+            <p className="text-right text-xs sm:text-sm font-extrabold tracking-widest text-[#78350f] uppercase bg-[#78350f]/10 px-3 py-1 rounded-full border border-[#78350f]/20">
               {date}
             </p>
           </div>
@@ -317,9 +317,9 @@ export default function Letter({
             </button>
           </div>
 
-          <div className="flex items-center gap-3 text-xs sm:text-sm font-sans text-[#c9a13b]">
-            <span className="font-semibold text-[#881337] flex items-center gap-1">
-              <Heart className="w-3.5 h-3.5 fill-[#881337]" /> Part {currentPart + 1} of {totalParts}
+          <div className="flex items-center gap-3 text-xs sm:text-sm font-sans">
+            <span className="font-extrabold text-[#701a2b] bg-[#881337]/15 px-3.5 py-1.5 rounded-full border border-[#881337]/30 shadow-2xs flex items-center gap-1.5">
+              <Heart className="w-4 h-4 text-[#881337] fill-[#881337]" /> Part {currentPart + 1} of {totalParts}
             </span>
           </div>
         </footer>
