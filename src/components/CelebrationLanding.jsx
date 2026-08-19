@@ -52,7 +52,7 @@ export default function CelebrationLanding({ onOpenLetter }) {
         <img
           src="/pattani.jpg"
           alt="Pattani Background"
-          className="w-full h-full object-cover object-center opacity-70 filter brightness-115 contrast-105 saturate-110 scale-105 transition-all duration-700"
+          className="w-full h-full object-contain object-top sm:object-cover sm:object-center opacity-70 filter brightness-115 contrast-105 saturate-110 sm:scale-105 transition-all duration-700"
         />
         {/* Lighter Transparent Overlay for brighter background photo view */}
         <div className="absolute inset-0 bg-gradient-to-b from-[#0c0b0a]/45 via-[#0c0b0a]/20 to-[#0c0b0a]/60" />

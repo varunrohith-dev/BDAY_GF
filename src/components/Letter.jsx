@@ -149,7 +149,7 @@ export default function Letter({
           <img
             src="/couple.jpg"
             alt="Varun & Pattani Romantic Artwork Backdrop"
-            className="w-full h-full object-cover object-center opacity-45 filter brightness-110 contrast-105 saturate-110"
+            className="w-full h-full object-contain object-top sm:object-cover sm:object-center opacity-45 filter brightness-110 contrast-105 saturate-110"
           />
           <div className="absolute inset-0 bg-[#f2e9d8]/45 backdrop-blur-[1px]" />
         </div>
